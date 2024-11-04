@@ -102,6 +102,12 @@ PAL stdpcp
 126,80,190
 NAME final-day
 
+PAL stdpcq
+0,0,0
+255,253,217
+64,79,162
+NAME beach3
+
 ROOM 0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -214,7 +220,7 @@ bo,bo,j,j,j,j,j,j,j,bp,bq,br,bs,bt,bu,bv
 j,j,j,j,j,j,j,j,j,j,j,j,bw,bx,by,bz
 NAME beach3-pier
 ITM 3 15,13
-PAL 1
+PAL stdpcq
 
 ROOM 5
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -329,7 +335,7 @@ cw,0,0,cw,cw,0,0,e5,ez,0,0,0,0,0,0,0
 0,cw,cw,0,0,cw,0,f1,e0,ey,0,0,0,0,0,0
 0,0,0,0,0,0,cw,cw,cw,e1,cw,cw,cw,cw,0,0
 0,0,0,0,0,0,0,0,0,e3,0,0,0,0,cw,0
-0,0,0,0,dz,0,0,0,0,dy,e4,0,0,0,0,cw
+0,0,0,0,ie,0,0,0,0,dy,e4,0,0,0,0,cw
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,fq,0,0,0
@@ -638,7 +644,7 @@ ROOM stdpcr
 0,0,0,0,0,0,0,0,0,0,0,0,eq,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,fh,fh,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,fh,ep,fh,0,0,0,0,0,0,0,0,0,0
+0,0,0,fh,0,fh,0,0,0,0,0,0,0,0,0,0
 0,0,0,fh,ep,fh,0,0,0,0,0,0,0,0,0,0
 0,0,0,fh,ep,fh,0,0,0,0,0,0,0,0,0,0
 0,0,0,fh,ep,fh,0,0,0,0,0,0,0,0,0,0
@@ -4788,15 +4794,6 @@ TIL 5a
 11111111
 11111000
 11111111
->
-11111111
-11111111
-11111111
-11111111
-11111111
-11111111
-11111111
-11110000
 NAME beach1 (11,7)
 
 TIL 5b
@@ -4808,15 +4805,6 @@ TIL 5b
 11111111
 00001111
 11111111
->
-11111111
-11111111
-11111111
-11111111
-11111111
-11111111
-11111111
-00001111
 NAME beach1 (12,7)
 
 TIL 5c
@@ -4955,30 +4943,12 @@ TIL 5n
 11100000
 11111100
 00011111
->
-11111111
-11000111
-11111111
-00111111
-00000011
-11100000
-11111100
-00011111
 NAME beach1 (11,8)
 WAL false
 
 TIL 5o
 11110001
 11111111
-11111111
-11111111
-10000111
-11100000
-01111000
-11111111
->
-11111111
-11110001
 11111111
 11111111
 10000111
@@ -4996,15 +4966,6 @@ TIL 5p
 11111111
 00011111
 00000000
->
-11111111
-11111111
-11111111
-10111111
-11100111
-11111001
-00011111
-00000000
 NAME beach1 (13,8)
 
 TIL 5q
@@ -5016,15 +4977,6 @@ TIL 5q
 11001111
 11111111
 00000111
->
-11111111
-11111111
-11111111
-11110001
-11001110
-11111111
-11111111
-00000111
 NAME beach1 (14,8)
 
 TIL 5r
@@ -5034,15 +4986,6 @@ TIL 5r
 11000001
 00111111
 11111111
-00011111
-11100111
->
-11111111
-11111111
-11111111
-11111111
-00000111
-11111001
 00011111
 11100111
 NAME beach1 (15,8)
@@ -7970,7 +7913,7 @@ TIL dt
 11111001
 11111111
 11111110
-11111101
+11111100
 11111001
 
 TIL du
@@ -10022,6 +9965,25 @@ TIL id
 01010101
 01010101
 
+TIL ie
+00000000
+00000000
+00000000
+00000000
+00011000
+00100100
+00011000
+00000000
+>
+00000000
+00000000
+00000000
+00000000
+00000000
+00010000
+00000000
+00000000
+
 SPR 10
 00011100
 01101000
@@ -10060,7 +10022,7 @@ SPR A
 01001110
 01010010
 01010001
-POS 0 10,9
+POS 4 5,14
 
 SPR b
 00000000
@@ -11128,10 +11090,10 @@ NAME exit narration 1
 
 DLG 13
 """
-Heh the one thing i didn't {wvy}pick up{/wvy}
+heh the one thing i didn't {wvy}pick up{/wvy}
 {pg}the sign damini gave me.
 {pg}...
-{pg}Damini's son has a phone shop now
+{pg}Damini's son has a phone shop now{wvy}...{/wvy}
 {pg}that family likes connecting people
 {pg}i should show her this
 {pg}she'll be happy 
@@ -11224,7 +11186,7 @@ what even is this huh
 {pg}...
 {pg}oh its half a chair
 {pg}woohoo 
-another stool to sit!”
+another place to sit!”
 {pg}my new precious
 """
 NAME chair dialog
@@ -11233,7 +11195,7 @@ DLG e
 """
 {exit "chai-cup" 15 15 "wave"}{wvy}...{/wvy}
 {pg}Oh how did this end up here from the tapri{wvy}...{/wvy}
-{pg}Such a pretty glass
+{pg}Such a pretty glass{wvy}...{/wvy}
 {pg}atleast a thousand mouths kissed this{wvy}...{/wvy}
 {pg}I must keep it safe, How bad it must have felt after{wvy}...{/wvy} 
 {pg}being kissed everyday then left to sink{wvy}...{wvy}
@@ -11326,7 +11288,7 @@ NAME cat3 dialog
 
 DLG l
 """
-this is long
+this is a long rod
 {pg}like a handlebar moustace
 {pg}OH its a {wvy}...{/wvy}
 {pg}handlebar
@@ -11376,7 +11338,7 @@ i have so many things
 {pg}my souvenir's, someones forgottten memories{wvy}...{/wvy}
 {pg}{wvy}...{/wvy}
 {pg}i wonder what i have forgotten
-{pg}who holds what i have lost...
+{pg}who holds what i have lost{wvy}...{/wvy}
 """
 NAME mem2 dialog
 
